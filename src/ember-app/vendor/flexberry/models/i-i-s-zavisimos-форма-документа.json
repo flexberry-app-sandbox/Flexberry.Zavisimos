@@ -1,0 +1,169 @@
+﻿{
+  "name": "IISZavisimosФормаДокумента",
+  "modelName": "i-i-s-zavisimos-форма-документа",
+  "className": "ФормаДокумента",
+  "nameSpace": "IIS.Zavisimos",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "отделы",
+      "type": "i-i-s-zavisimos-отделы",
+      "flexberryType": "Отделы",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "содержание",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "авПользователи",
+      "relatedTo": "i-i-s-zavisimos-ав-пользователи",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ФормаДокументаE",
+      "modelName": "i-i-s-zavisimos-форма-документа",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "содержание",
+          "caption": "Содержание",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "отделы",
+          "caption": "Отделы",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Логин",
+          "lookupValueField": "логин",
+          "relationName": "АвПользователи",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "логин",
+              "caption": "Логин",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Ав пользователи",
+          "name": "авПользователи",
+          "relatedTo": "i-i-s-zavisimos-ав-пользователи",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ФормаДокументаL",
+      "modelName": "i-i-s-zavisimos-форма-документа",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "содержание",
+          "caption": "Содержание",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "отделы",
+          "caption": "Отделы",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "АвПользователи",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "логин",
+              "caption": "Логин",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Логин",
+          "name": "авПользователи",
+          "relatedTo": "i-i-s-zavisimos-ав-пользователи",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

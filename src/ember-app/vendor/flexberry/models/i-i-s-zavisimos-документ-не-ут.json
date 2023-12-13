@@ -1,0 +1,80 @@
+﻿{
+  "name": "IISZavisimosДокументНеУт",
+  "modelName": "i-i-s-zavisimos-документ-не-ут",
+  "className": "ДокументНеУт",
+  "nameSpace": "IIS.Zavisimos",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаСохранения",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "тЧУтвержДок",
+      "relatedTo": "i-i-s-zavisimos-т-ч-утверж-док",
+      "inverse": "документНеУт"
+    },
+    {
+      "name": "тЧСоздДок",
+      "relatedTo": "i-i-s-zavisimos-т-ч-созд-док",
+      "inverse": "документНеУт"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ДокументНеУтE",
+      "modelName": "i-i-s-zavisimos-документ-не-ут",
+      "attrs": [
+        {
+          "name": "датаСохранения",
+          "caption": "Дата сохранения",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ТЧУтвержДокE",
+          "caption": "Т ч утверж док",
+          "name": "тЧУтвержДок",
+          "relatedTo": "i-i-s-zavisimos-т-ч-утверж-док",
+          "inverse": null
+        },
+        {
+          "projectionName": "ТЧСоздДокE",
+          "caption": "Т ч созд док",
+          "name": "тЧСоздДок",
+          "relatedTo": "i-i-s-zavisimos-т-ч-созд-док",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ДокументНеУтL",
+      "modelName": "i-i-s-zavisimos-документ-не-ут",
+      "attrs": [
+        {
+          "name": "датаСохранения",
+          "caption": "Дата сохранения",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "АвПользователи",
+      "projection": "АвПользователиL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ФормаДокумента",
+      "projection": "ФормаДокументаL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Утверждение док",
+  "name": "IISZavisimosУтверждениеДокE",
+  "className": "УтверждениеДокE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-zavisimos-утверждение-док",
+      "modelProjection": "УтверждениеДокE"
+    }
+  ]
+}

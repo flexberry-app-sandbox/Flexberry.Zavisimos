@@ -1,0 +1,232 @@
+﻿{
+  "name": "IISZavisimosСотрудники",
+  "modelName": "i-i-s-zavisimos-сотрудники",
+  "className": "Сотрудники",
+  "nameSpace": "IIS.Zavisimos",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iDСотрудника",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаПриема",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "зарплата",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерТелефона",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "отделы",
+      "type": "i-i-s-zavisimos-отделы",
+      "flexberryType": "Отделы",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "пол",
+      "type": "i-i-s-zavisimos-пол",
+      "flexberryType": "Пол",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "фИОСотрудника",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "должность",
+      "relatedTo": "i-i-s-zavisimos-должность",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СотрудникиE",
+      "modelName": "i-i-s-zavisimos-сотрудники",
+      "attrs": [
+        {
+          "name": "iDСотрудника",
+          "caption": "I d сотрудника",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "фИОСотрудника",
+          "caption": "Ф и о сотрудника",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "отделы",
+          "caption": "Отделы",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "датаПриема",
+          "caption": "Дата приема",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "зарплата",
+          "caption": "Зарплата",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "номерТелефона",
+          "caption": "Номер телефона",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "пол",
+          "caption": "Пол",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Должность",
+          "lookupValueField": "должность",
+          "relationName": "Должность",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "должность",
+              "caption": "Должность",
+              "hidden": true,
+              "index": 8
+            }
+          ],
+          "index": 7,
+          "type": "standard",
+          "caption": "Должность",
+          "name": "должность",
+          "relatedTo": "i-i-s-zavisimos-должность",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "СотрудникиL",
+      "modelName": "i-i-s-zavisimos-сотрудники",
+      "attrs": [
+        {
+          "name": "iDСотрудника",
+          "caption": "I d сотрудника",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "фИОСотрудника",
+          "caption": "Ф и о сотрудника",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "отделы",
+          "caption": "Отделы",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "датаПриема",
+          "caption": "Дата приема",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "зарплата",
+          "caption": "Зарплата",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "номерТелефона",
+          "caption": "Номер телефона",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "пол",
+          "caption": "Пол",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Должность",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "должность",
+              "caption": "Должность",
+              "hidden": false,
+              "index": 7
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Должность",
+          "name": "должность",
+          "relatedTo": "i-i-s-zavisimos-должность",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

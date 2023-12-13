@@ -1,0 +1,176 @@
+﻿{
+  "name": "IISZavisimosУтверждениеДок",
+  "modelName": "i-i-s-zavisimos-утверждение-док",
+  "className": "УтверждениеДок",
+  "nameSpace": "IIS.Zavisimos",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "утверждение",
+      "type": "i-i-s-zavisimos-утверждение",
+      "flexberryType": "Утверждение",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "авПользователи",
+      "relatedTo": "i-i-s-zavisimos-ав-пользователи",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "формаДокумента",
+      "relatedTo": "i-i-s-zavisimos-форма-документа",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "УтверждениеДокE",
+      "modelName": "i-i-s-zavisimos-утверждение-док",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "утверждение",
+          "caption": "Утверждение",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Логин",
+          "lookupValueField": "логин",
+          "relationName": "АвПользователи",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "логин",
+              "caption": "Логин",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Ав пользователи",
+          "name": "авПользователи",
+          "relatedTo": "i-i-s-zavisimos-ав-пользователи",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "ФормаДокумента",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Форма документа",
+          "name": "формаДокумента",
+          "relatedTo": "i-i-s-zavisimos-форма-документа",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "УтверждениеДокL",
+      "modelName": "i-i-s-zavisimos-утверждение-док",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "утверждение",
+          "caption": "Утверждение",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "АвПользователи",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "логин",
+              "caption": "Логин",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Логин",
+          "name": "авПользователи",
+          "relatedTo": "i-i-s-zavisimos-ав-пользователи",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ФормаДокумента",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "формаДокумента",
+          "relatedTo": "i-i-s-zavisimos-форма-документа",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-zavisimos-вход-в-систему-e",
+  "editForm": "i-i-s-zavisimos-вход-в-систему-e",
+  "external": false,
+  "caption": "Вход в систему",
+  "name": "IISZavisimosВходВСистемуL",
+  "className": "ВходВСистемуL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-zavisimos-вход-в-систему",
+      "modelProjection": "ВходВСистемуL"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+﻿{
+  "name": "IISZavisimosАвПользователи",
+  "modelName": "i-i-s-zavisimos-ав-пользователи",
+  "className": "АвПользователи",
+  "nameSpace": "IIS.Zavisimos",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаРегистрации",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "логин",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "пароль",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-zavisimos-сотрудники",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "тЧПрава",
+      "relatedTo": "i-i-s-zavisimos-т-ч-права",
+      "inverse": "авПользователи"
+    }
+  ],
+  "projections": [
+    {
+      "name": "АвПользователиE",
+      "modelName": "i-i-s-zavisimos-ав-пользователи",
+      "attrs": [
+        {
+          "name": "датаРегистрации",
+          "caption": "Дата регистрации",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "логин",
+          "caption": "Логин",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "пароль",
+          "caption": "Пароль",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИОСотрудника",
+          "lookupValueField": "фИОСотрудника",
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОСотрудника",
+              "caption": "Ф и о сотрудника",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Сотрудники",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-zavisimos-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ТЧПраваE",
+          "caption": "Т ч права",
+          "name": "тЧПрава",
+          "relatedTo": "i-i-s-zavisimos-т-ч-права",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "АвПользователиL",
+      "modelName": "i-i-s-zavisimos-ав-пользователи",
+      "attrs": [
+        {
+          "name": "датаРегистрации",
+          "caption": "Дата регистрации",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "логин",
+          "caption": "Логин",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "пароль",
+          "caption": "Пароль",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОСотрудника",
+              "caption": "Ф и о сотрудника",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Ф и о сотрудника",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-zavisimos-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-zavisimos-должность-e",
+  "editForm": "i-i-s-zavisimos-должность-e",
+  "external": false,
+  "caption": "Должность",
+  "name": "IISZavisimosДолжностьL",
+  "className": "ДолжностьL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-zavisimos-должность",
+      "modelProjection": "ДолжностьL"
+    }
+  ]
+}

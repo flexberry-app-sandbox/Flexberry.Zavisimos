@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-zavisimos-документ-не-ут-e",
+  "editForm": "i-i-s-zavisimos-документ-не-ут-e",
+  "external": false,
+  "caption": "Документ не ут",
+  "name": "IISZavisimosДокументНеУтL",
+  "className": "ДокументНеУтL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-zavisimos-документ-не-ут",
+      "modelProjection": "ДокументНеУтL"
+    }
+  ]
+}

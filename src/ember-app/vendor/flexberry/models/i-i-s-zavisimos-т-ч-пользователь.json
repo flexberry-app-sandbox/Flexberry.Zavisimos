@@ -1,0 +1,60 @@
+﻿{
+  "name": "IISZavisimosТЧПользователь",
+  "modelName": "i-i-s-zavisimos-т-ч-пользователь",
+  "className": "ТЧПользователь",
+  "nameSpace": "IIS.Zavisimos",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "авПользователи",
+      "relatedTo": "i-i-s-zavisimos-ав-пользователи",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "входВСистему",
+      "relatedTo": "i-i-s-zavisimos-вход-в-систему",
+      "inverse": "тЧПользователь"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧПользовательE",
+      "modelName": "i-i-s-zavisimos-т-ч-пользователь",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Логин",
+          "lookupValueField": "логин",
+          "relationName": "АвПользователи",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "логин",
+              "caption": "Логин",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Ав пользователи",
+          "name": "авПользователи",
+          "relatedTo": "i-i-s-zavisimos-ав-пользователи",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

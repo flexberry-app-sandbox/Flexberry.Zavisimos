@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-zavisimos-форма-документа-e",
+  "editForm": "i-i-s-zavisimos-форма-документа-e",
+  "external": false,
+  "caption": "Форма документа",
+  "name": "IISZavisimosФормаДокументаL",
+  "className": "ФормаДокументаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-zavisimos-форма-документа",
+      "modelProjection": "ФормаДокументаL"
+    }
+  ]
+}

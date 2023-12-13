@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудники",
+      "projection": "СотрудникиL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Ав пользователи",
+  "name": "IISZavisimosАвПользователиE",
+  "className": "АвПользователиE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-zavisimos-ав-пользователи",
+      "modelProjection": "АвПользователиE"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-zavisimos-утверждение-док-e",
+  "editForm": "i-i-s-zavisimos-утверждение-док-e",
+  "external": false,
+  "caption": "Утверждение док",
+  "name": "IISZavisimosУтверждениеДокL",
+  "className": "УтверждениеДокL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-zavisimos-утверждение-док",
+      "modelProjection": "УтверждениеДокL"
+    }
+  ]
+}

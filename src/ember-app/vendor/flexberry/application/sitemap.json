@@ -1,0 +1,64 @@
+﻿{
+  "applicationCaption": "Zavisimos",
+  "applicationTitle": "Zavisimos",
+  "items": [
+    {
+      "link": null,
+      "menuName": "zavisimos",
+      "caption": "Zavisimos",
+      "title": "Zavisimos",
+      "children": [
+        {
+          "link": "i-i-s-zavisimos-должность-l",
+          "menuName": null,
+          "caption": "Должность",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-zavisimos-документ-не-ут-l",
+          "menuName": null,
+          "caption": "Документ не ут",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-zavisimos-ав-пользователи-l",
+          "menuName": null,
+          "caption": "Ав пользователи",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-zavisimos-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-zavisimos-форма-документа-l",
+          "menuName": null,
+          "caption": "Форма документа",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-zavisimos-утверждение-док-l",
+          "menuName": null,
+          "caption": "Утверждение док",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-zavisimos-вход-в-систему-l",
+          "menuName": null,
+          "caption": "Вход в систему",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

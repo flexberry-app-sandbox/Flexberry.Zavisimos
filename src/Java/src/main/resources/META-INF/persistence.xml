@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>Zavisimos.model.Dolzhnost</class>
+        <class>Zavisimos.model.TCHPolzovatel</class>
+        <class>Zavisimos.model.DokumentNeUt</class>
+        <class>Zavisimos.model.TCHSozdDok</class>
+        <class>Zavisimos.model.TCHPrava</class>
+        <class>Zavisimos.model.TCHUtverzhDok</class>
+        <class>Zavisimos.model.AvPolzovateli</class>
+        <class>Zavisimos.model.Sotrudniki</class>
+        <class>Zavisimos.model.FormaDokumenta</class>
+        <class>Zavisimos.model.UtverzhdenieDok</class>
+        <class>Zavisimos.model.VxodVSistemu</class>
+        <class>Zavisimos.model.FlexberryAdvLimit</class>
+        <class>Zavisimos.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>Zavisimos.model.NewPlatformFlexberryServicesLock</class>
+        <class>Zavisimos.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

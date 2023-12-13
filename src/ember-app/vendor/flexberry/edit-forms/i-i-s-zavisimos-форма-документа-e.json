@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "АвПользователи",
+      "projection": "АвПользователиL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Форма документа",
+  "name": "IISZavisimosФормаДокументаE",
+  "className": "ФормаДокументаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-zavisimos-форма-документа",
+      "modelProjection": "ФормаДокументаE"
+    }
+  ]
+}

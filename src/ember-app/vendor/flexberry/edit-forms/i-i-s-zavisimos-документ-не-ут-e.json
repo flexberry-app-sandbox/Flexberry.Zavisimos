@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "утверждениеДок",
+      "displayAttributeName": "дата",
+      "required": true,
+      "relationName": "ТЧУтвержДок.УтверждениеДок",
+      "projection": "УтверждениеДокL",
+      "detailModelName": "i-i-s-zavisimos-т-ч-утверж-док"
+    },
+    {
+      "master": "формаДокумента",
+      "displayAttributeName": "наименование",
+      "required": true,
+      "relationName": "ТЧСоздДок.ФормаДокумента",
+      "projection": "ФормаДокументаL",
+      "detailModelName": "i-i-s-zavisimos-т-ч-созд-док"
+    }
+  ],
+  "external": false,
+  "caption": "Документ не ут",
+  "name": "IISZavisimosДокументНеУтE",
+  "className": "ДокументНеУтE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-zavisimos-документ-не-ут",
+      "modelProjection": "ДокументНеУтE"
+    }
+  ]
+}

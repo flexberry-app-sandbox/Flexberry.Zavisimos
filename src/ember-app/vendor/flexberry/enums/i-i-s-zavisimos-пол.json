@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.Zavisimos",
+  "className": "Пол",
+  "enumObjects": {
+    "Женский": "Женский",
+    "Мужской": "Мужской"
+  }
+}

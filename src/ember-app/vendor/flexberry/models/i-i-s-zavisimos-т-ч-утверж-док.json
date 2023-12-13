@@ -1,0 +1,60 @@
+﻿{
+  "name": "IISZavisimosТЧУтвержДок",
+  "modelName": "i-i-s-zavisimos-т-ч-утверж-док",
+  "className": "ТЧУтвержДок",
+  "nameSpace": "IIS.Zavisimos",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "утверждениеДок",
+      "relatedTo": "i-i-s-zavisimos-утверждение-док",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "документНеУт",
+      "relatedTo": "i-i-s-zavisimos-документ-не-ут",
+      "inverse": "тЧУтвержДок"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧУтвержДокE",
+      "modelName": "i-i-s-zavisimos-т-ч-утверж-док",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Дата",
+          "lookupValueField": "дата",
+          "relationName": "УтверждениеДок",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "дата",
+              "caption": "Дата",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Утверждение док",
+          "name": "утверждениеДок",
+          "relatedTo": "i-i-s-zavisimos-утверждение-док",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
